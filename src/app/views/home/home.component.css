@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Playfair+Display:ital@1&family=Roboto&display=swap%27');
+
+* {
+  font-family: 'Playfair Display', serif;
+}
+
+.sup-menu{
+  height: 80px;
+  background: linear-gradient(200deg, #010101 0%, rgba(196, 23, 29, .9) 100%);
+  border-bottom: #ffffff solid 2px;
+  border-image: url(../../../assets/img/doily-8401e635.png) 30;
+
+}
+
+.site-name {
+  font-size: 1.5em;
+  text-shadow:-1px -1px 0px rgb(17, 1, 1);
+}
+
+.btn-menu {
+  margin-right: 20px;
+}
+
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
