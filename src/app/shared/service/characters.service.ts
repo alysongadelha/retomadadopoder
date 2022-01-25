@@ -16,9 +16,9 @@ export class CharactersService {
     }),
   };
 
-  public getCharactersWithFlag(flag: string): Observable<CharactersVampire> {
-    return this.httpClient.get<CharactersVampire>(
-      `${this.apiUrl}/filiation/${flag}`
+  public getCharactersWithFlag(filiation: number, pageNumber: number, PageSize: number): Observable<CharactersVampire[]> {
+    return this.httpClient.get<CharactersVampire[]>(
+      `${this.apiUrl}/filiation/${filiation}?PageNumber=${pageNumber}&PageSize=${PageSize}`
     );
   }
 
