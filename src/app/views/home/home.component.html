@@ -1,16 +1,24 @@
 <mat-toolbar color="primary" class="sup-menu">
-  <div class="top-menu">
-    <button mat-raised-button class="btn-menu"[matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item [matMenuTriggerFor]="trevas">Mundo das trevas</button>
-      <button mat-menu-item [matMenuTriggerFor]="tormenta">Tormenta 20</button>
-    </mat-menu>
-    <mat-menu #trevas="matMenu">
-      <button mat-menu-item>Retomada de Poder</button>
-    </mat-menu>
-    <mat-menu #tormenta="matMenu">
-      <button mat-menu-item>Narraçõ do Viado</button>
-    </mat-menu>
-    <span class="site-name">Retomada de Poder</span>
+  <div class="container">
+    <div class="top-menu">
+      <button mat-raised-button class="btn-menu" [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="trevas">Mundo das trevas</button>
+        <button mat-menu-item [matMenuTriggerFor]="tormenta">Tormenta 20</button>
+      </mat-menu>
+      <mat-menu #trevas="matMenu">
+        <button mat-menu-item>Retomada de Poder</button>
+      </mat-menu>
+      <mat-menu #tormenta="matMenu">
+        <button mat-menu-item>Narraçõ do Viado</button>
+      </mat-menu>
+      <span class="site-name">{{pageName}}</span>
+    </div>
+    <button class="btn-add" mat-raised-button (click)="addChar()">
+      <!-- <mat-icon>add_circle</mat-icon> -->
+      Personagem
+    </button>
   </div>
 </mat-toolbar>
+
+<app-characters-vampire></app-characters-vampire>

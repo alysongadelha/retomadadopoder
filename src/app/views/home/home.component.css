@@ -9,7 +9,6 @@
   background: linear-gradient(200deg, #010101 0%, rgba(196, 23, 29, .9) 100%);
   border-bottom: #ffffff solid 2px;
   border-image: url(../../../assets/img/doily-8401e635.png) 30;
-
 }
 
 .site-name {
@@ -25,3 +24,14 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
