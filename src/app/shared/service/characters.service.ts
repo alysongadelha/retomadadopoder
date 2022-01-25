@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { CharactersVampire } from './model/character-vampire.model';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,7 @@ export class CharactersService {
     }),
   };
 
-  public getCharactersWithFlag(flag: string): Observable<Characters> {
+  public getCharactersWithFlag(flag: string): Observable<CharactersVampire> {
     return null;
   }
 }
